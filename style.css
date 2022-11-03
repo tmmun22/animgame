@@ -1,0 +1,49 @@
+
+body{
+	background-color: #102525;
+
+}
+#foo{
+	color: #e7942e;
+	font-family: 'Pacifico', cursive;
+	font-size: 43px;
+}
+#start{
+	color: #0d1f1f;
+	font-family: 'Pacifico', cursive;
+	font-size: 33px;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
+}
+#finich{
+	color: #e7942e;
+	font-family: 'Pacifico', cursive;
+	font-size: 43px;
+}
+#rectangle {
+    height: 6px;
+	background: #e7942e;
+	margin: 22px;
+    border-radius: 100px;
+}
+a.button7 {
+	font-weight: 700;
+	color: #e08f2c;
+	text-decoration: none;
+	padding: .1em 1em calc(.1em + 11px);
+	border-radius: 11px;
+	background: #0c1d1d;
+	box-shadow: 0 -3px #081313 inset;
+	transition: 0.2s;
+	font-family: 'Pacifico', cursive;
+	font-size: 33px;
+  } 
+  a.button7:hover { 
+	color: #081313;
+	background:#122c2c;
+	box-shadow: 0 -3px #0c1d1d inset; }
+  a.button7:active {
+	background: rgb(33,147,90);
+	box-shadow: 0 3px rgb(33,147,90) inset;
+  }

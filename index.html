@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script>
+        let fruits = ["Лев", "Носорог", "Тигр","Буйвол", "Слон", "Бегемот", "Газель", "Гиена", "Жираф", "Зебра", "Носорог", "Шимпанзе"];
+        let bodyAnimals = ["Голова", "Туловище", "Конечности","Глаза","Покрытие"];
+        var i=0;
+        var rand;
+        var randBody;
+
+        function me(){
+            document.getElementById('start').textContent = "Рисуем"
+            rand = Math.floor(Math.random() * 12);
+            console.log(fruits[rand]);
+            document.getElementById('foo').textContent = fruits[rand]
+            randBody = Math.floor(Math.random() * 5);
+            setTimeout(() => { document.getElementById('start').textContent = "Стоп"
+            document.getElementById('finich').textContent = bodyAnimals[randBody] }, 2000);
+            
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <br>
+        <div id="rectangle"></div>
+        <div id="foo">Животное</div>
+        <div onclick="me();" id="start">Тик Так</div>
+        <div id="finich">Ответ</div>
+        <div id="rectangle"></div>
+        <a  onclick="me();" href="#" class="button7">Начинаем</a>
+    </center>
+</body>
+</html>
